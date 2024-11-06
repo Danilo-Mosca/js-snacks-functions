@@ -5,7 +5,7 @@ const name = 'Mario';
 
 // Dichiara la funzione qui.
 function salutare(nome) {
-    saluto = "Ciao ";
+    let saluto = "Ciao ";
     saluto += nome;
     return saluto;
 }
