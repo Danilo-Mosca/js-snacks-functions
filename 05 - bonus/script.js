@@ -7,20 +7,25 @@ e buonasera se è sera (oltre le 17)
 
 const name = 'Mario';
 
-
 // Dichiara la funzione qui.
 function salutare(nome) {
     // Variabile d'appoggio
     saluto = "";
     // Dichiaro l'oggetto Date()
     const date = new Date();
-    if (date.getHours() < 13) {
-        saluto = "Buongiorno " + nome;
-    } else if (date.getHours() < 17) {
-        saluto = "Buon pomeriggio " + nome;
-    }
-    else {
-        saluto = "Buonasera " + nome;
+    // Metto le varie condizioni in uno switch
+    switch (true) {
+        case ((date.getHours() > 6) && (date.getHours() < 13)):
+            saluto = "Buongiorno " + nome;
+            break;
+        case (date.getHours() < 17):
+            saluto = "Buon pomeriggio " + nome;
+            break;
+        case ((date.getHours() > 17) && (date.getHours() < 23)):
+            saluto = "Buonasera " + nome;
+            break;
+        default:
+            saluto = "Buonanotte " + nome;
     }
     return saluto;
 }
