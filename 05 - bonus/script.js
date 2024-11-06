@@ -18,7 +18,7 @@ function salutare(nome) {
         case ((date.getHours() > 6) && (date.getHours() < 13)):
             saluto = "Buongiorno " + nome;
             break;
-        case (date.getHours() < 17):
+        case ((date.getHours() > 13 && (date.getHours() < 17))):
             saluto = "Buon pomeriggio " + nome;
             break;
         case ((date.getHours() > 17) && (date.getHours() < 23)):
