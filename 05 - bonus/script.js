@@ -14,7 +14,7 @@ function salutare(nome) {
     // Dichiaro l'oggetto Date()
     const date = new Date();
     // Metto le varie condizioni in uno switch
-    switch (true) {
+    switch (date.getHours()) {
         case ((date.getHours() > 6) && (date.getHours() < 13)):
             saluto = "Buongiorno " + nome;
             break;
