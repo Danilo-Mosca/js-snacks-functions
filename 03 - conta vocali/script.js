@@ -1,16 +1,16 @@
 /* Scrivi una funzione che accetti una stringa e restituisca il numero di vocali contenute al suo interno */
 
-const word = 'javascript';
+const word = 'javascriptA';
 
 
 // Dichiara la funzione qui.
 function vowelsNumber(stringa) {
     // Array contenente le vocali
-    const vowelsArray = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    const vowelsArray = ['a', 'e', 'i', 'o', 'u'];
     // variabile contatore di vocali
     let vocalCounter = 0;
     for (let i = 0; i < stringa.length; i++) {
-        if (vowelsArray.includes(stringa[i])) {
+        if (vowelsArray.includes(stringa[i].toLowerCase())) {
             vocalCounter++;
         }
     }
@@ -25,11 +25,11 @@ console.log(vowelsNumber(word));
 /* Oppure usando un arrow function: */
 const result = (stringa) => {
     // Array contenente le vocali
-    const vowelsArray = ['a', 'e', 'i', 'o', 'u, A, E, I, O, U'];
+    const vowelsArray = ['a', 'e', 'i', 'o', 'u'];
     // variabile contatore di vocali
     let vocalCounter = 0;
     for (let i = 0; i < stringa.length; i++) {
-        if (vowelsArray.includes(stringa[i])) {
+        if (vowelsArray.includes(stringa[i].toLowerCase())) {
             vocalCounter++;
         }
     }
